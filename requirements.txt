@@ -1,0 +1,7 @@
+networkx  
+transformers
+spacy
+ gensim
+ numpy 
+ sklearn  
+ flask 
