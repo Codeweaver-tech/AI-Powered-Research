@@ -1,0 +1,14 @@
+name:  'JSON  Processor  Action' 
+description:  'Processes JSON files to  update  a GitHub Repository' 
+inputs:  
+   json_file_path:  #  Path  to  the JSON  file  in the repository 
+        description: 'The  full path to the  JSON  instruction file' 
+       required: true  
+outputs: 
+ commit_message:
+      description: 'The  commit message extracted  from the  JSON  file.'  
+  modified_file: 
+     description: 'The path of  the  file or  folder modified  by  the action.' 
+runs:  
+using: 'docker' 
+ image: 'Dockerfile'  
